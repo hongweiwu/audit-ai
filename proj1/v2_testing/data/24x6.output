@@ -1,0 +1,274 @@
+total data =24 fold=6 batch=24 的输出结果
+
+
+(C:\Program Files\Anaconda3) C:\Dropbox\deeplearning\python\sf>python mlptest.py
+ -m --epochs 1
+Using TensorFlow backend.
+argument no -s. Therefore now will do cross_validation...
+20 train samples
+4 test samples
+folds [<class 'int'>], detail:
+6
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 22, detail:
+[12, 3, 8, 20, 7, 17, 10, 16, 13, 21, 18, 23, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 2, detail:
+[22, 2]
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "BestSplits" device_type: "CPU"') fo
+r unknown op: BestSplits
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "CountExtremelyRandomStats" device_t
+ype: "CPU"') for unknown op: CountExtremelyRandomStats
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "FinishedNodes" device_type: "CPU"')
+ for unknown op: FinishedNodes
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "GrowTree" device_type: "CPU"') for
+unknown op: GrowTree
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "ReinterpretStringToFloat" device_ty
+pe: "CPU"') for unknown op: ReinterpretStringToFloat
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "SampleInputs" device_type: "CPU"')
+for unknown op: SampleInputs
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "ScatterAddNdim" device_type: "CPU"'
+) for unknown op: ScatterAddNdim
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "TopNInsert" device_type: "CPU"') fo
+r unknown op: TopNInsert
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "TopNRemove" device_type: "CPU"') fo
+r unknown op: TopNRemove
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "TreePredictions" device_type: "CPU"
+') for unknown op: TreePredictions
+E c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core
+\framework\op_kernel.cc:943] OpKernel ('op: "UpdateFertileSlots" device_type: "C
+PU"') for unknown op: UpdateFertileSlots
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_1 (Dense)              (None, 512)               4096
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_2 (Dense)              (None, 512)               262656
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_3 (Dense)              (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 22 samples, validate on 2 samples
+Epoch 1/1
+22/22 [==============================] - 0s - loss: 1.8262 - acc: 0.0000e+00 - v
+al_loss: 1.7827 - val_acc: 0.0000e+00
+loss [<class 'list'>], length of 1, detail:
+[1.7827191352844238]
+accuracy [<class 'list'>], length of 1, detail:
+[0.0]
+
+
+
+
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 22, detail:
+[22, 2, 8, 20, 7, 17, 10, 16, 13, 21, 18, 23, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 2, detail:
+[12, 3]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_4 (Dense)              (None, 512)               4096
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_5 (Dense)              (None, 512)               262656
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_6 (Dense)              (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 22 samples, validate on 2 samples
+Epoch 1/1
+22/22 [==============================] - 0s - loss: 1.7524 - acc: 0.4545 - val_l
+oss: 1.4530 - val_acc: 0.5000
+loss [<class 'list'>], length of 2, detail:
+[1.7827191352844238, 1.4530351161956787]
+accuracy [<class 'list'>], length of 2, detail:
+[0.0, 0.5]
+
+
+
+
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 21, detail:
+[22, 2, 12, 3, 17, 10, 16, 13, 21, 18, 23, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 3, detail:
+[8, 20, 7]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_7 (Dense)              (None, 512)               4096
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_8 (Dense)              (None, 512)               262656
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_9 (Dense)              (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 21 samples, validate on 3 samples
+Epoch 1/1
+21/21 [==============================] - 0s - loss: 1.7916 - acc: 0.0476 - val_l
+oss: 1.3074 - val_acc: 0.6667
+loss [<class 'list'>], length of 3, detail:
+[1.7827191352844238, 1.4530351161956787, 1.3073869943618774]
+accuracy [<class 'list'>], length of 3, detail:
+[0.0, 0.5, 0.66666668653488159]
+
+
+
+
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 22, detail:
+[22, 2, 12, 3, 8, 20, 7, 16, 13, 21, 18, 23, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 2, detail:
+[17, 10]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_10 (Dense)             (None, 512)               4096
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_11 (Dense)             (None, 512)               262656
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_12 (Dense)             (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 22 samples, validate on 2 samples
+Epoch 1/1
+22/22 [==============================] - 0s - loss: 1.8102 - acc: 0.0455 - val_l
+oss: 1.0633 - val_acc: 1.0000
+loss [<class 'list'>], length of 4, detail:
+[1.7827191352844238, 1.4530351161956787, 1.3073869943618774, 1.0632787942886353]
+
+accuracy [<class 'list'>], length of 4, detail:
+[0.0, 0.5, 0.66666668653488159, 1.0]
+
+
+
+
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 21, detail:
+[22, 2, 12, 3, 8, 20, 7, 17, 10, 18, 23, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 3, detail:
+[16, 13, 21]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_13 (Dense)             (None, 512)               4096
+_________________________________________________________________
+dropout_9 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_14 (Dense)             (None, 512)               262656
+_________________________________________________________________
+dropout_10 (Dropout)         (None, 512)               0
+_________________________________________________________________
+dense_15 (Dense)             (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 21 samples, validate on 3 samples
+Epoch 1/1
+21/21 [==============================] - 0s - loss: 1.7806 - acc: 0.1429 - val_l
+oss: 1.2579 - val_acc: 0.6667
+loss [<class 'list'>], length of 5, detail:
+[1.7827191352844238,
+ 1.4530351161956787,
+ 1.3073869943618774,
+ 1.0632787942886353,
+ 1.2579067945480347]
+accuracy [<class 'list'>], length of 5, detail:
+[0.0, 0.5, 0.66666668653488159, 1.0, 0.66666668653488159]
+
+
+
+
+==========begin of iteration =========
+train_idx [<class 'list'>], length of 22, detail:
+[22, 2, 12, 3, 8, 20, 7, 17, 10, 16, 13, 21, 14, 19, 4, 1, 15, 9, 5, 6, 0, 11]
+test_idx [<class 'list'>], length of 2, detail:
+[18, 23]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_16 (Dense)             (None, 512)               4096
+_________________________________________________________________
+dropout_11 (Dropout)         (None, 512)               0
+_________________________________________________________________
+dense_17 (Dense)             (None, 512)               262656
+_________________________________________________________________
+dropout_12 (Dropout)         (None, 512)               0
+_________________________________________________________________
+dense_18 (Dense)             (None, 6)                 3078
+=================================================================
+Total params: 269,830
+Trainable params: 269,830
+Non-trainable params: 0
+_________________________________________________________________
+Train on 22 samples, validate on 2 samples
+Epoch 1/1
+22/22 [==============================] - 0s - loss: 1.8510 - acc: 0.0455 - val_l
+oss: 1.4829 - val_acc: 0.5000
+loss [<class 'list'>], length of 6, detail:
+[1.7827191352844238,
+ 1.4530351161956787,
+ 1.3073869943618774,
+ 1.0632787942886353,
+ 1.2579067945480347,
+ 1.4828794002532959]
+accuracy [<class 'list'>], length of 6, detail:
+[0.0, 0.5, 0.66666668653488159, 1.0, 0.66666668653488159, 0.5]
+
+
+
+
+
+----------------------------------------
+
+run #   test loss       test accuracy
+0       1.782719        0.000000
+1       1.453035        0.500000
+2       1.307387        0.666667
+3       1.063279        1.000000
+4       1.257907        0.666667
+5       1.482879        0.500000
+
+average loss: 0.834720623493
+average accuracy: 0.333333337307
+end of clear_session, main will end...
+
+(C:\Program Files\Anaconda3) C:\Dropbox\deeplearning\python\sf>
