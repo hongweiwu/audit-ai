@@ -4,7 +4,7 @@
 
 import shared as s
 
-cur_mode="live"
+cur_mode="debug"
 
 if cur_mode=="debug":
     const_batch = 24; const_folds = 6; const_epochs=1
