@@ -10,7 +10,7 @@ if cur_mode=="debug":
     const_batch = 24; const_folds = 6; const_epochs=1
     pos_file="data/pos-few.csv";neg_file="data/neg-few.csv"
 else:
-    const_batch = 128; const_folds = 10; const_epochs=2
+    const_batch = 128; const_folds = 10; const_epochs=20
     pos_file="data/pos-200.csv";neg_file="data/neg-200.csv"
 
 # start of the program, handles the parsing of arguments
